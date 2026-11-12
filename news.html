@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="az">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GameVerse | Xəbərlər</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="images/favicon.png">
+
+</head>
+
+<body>
+
+<header>
+
+    <nav class="navbar">
+
+        <a href="favorites.html" class="logo">
+
+            <div class="favorite-btn">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+
+            <img src="images/logo.jpeg" alt="GameVerse Logo">
+
+            <span>GameVerse</span>
+
+        </a>
+
+        <ul class="nav-menu">
+
+            <li><a href="index.html">Ana Səhifə</a></li>
+
+            <li><a href="games.html">Oyunlar</a></li>
+
+            <li><a href="playstation.html">PlayStation</a></li>
+
+            <li><a href="accesories.html">Aksesuarlar</a></li>
+
+            <li><a href="secondhand.html">İkinci Əl</a></li>
+
+            <li><a href="news.html" class="active">Xəbərlər</a></li>
+
+            <li><a href="contact.html">Əlaqə</a></li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+<section class="page-hero">
+
+    <div class="news-hero-content">
+
+        <h1>PlayStation Xəbərləri</h1>
+
+        <p>
+            PlayStation dünyasından ən son xəbərlər, yeniliklər və oyun elanları.
+        </p>
+
+    </div>
+
+</section>
+
+<section class="news-section">
+
+    <div class="news-container">
+
+        <!-- Xəbər 1 -->
+        <div class="news-card"
+
+data-title="Ghost of Yōtei üçün yeni gameplay yayımlandı"
+
+data-image="images/news1.jpg"
+
+data-text="Ghost of Yōtei üçün 20 dəqiqəlik gameplay videosu yayımlandı. Oyunda yeni döyüş mexanikaları, daha böyük açıq dünya və inkişaf etdirilmiş qrafika təqdim olunub. Sony oyunun 2026-cı ilin ən böyük PlayStation eksklüzivlərindən biri olacağını bildirib.">
+
+            <img src="images/ghost-of-yotei-ps5.jpg" alt="Ghost of Yōtei">
+
+            <div class="news-content">
+
+                <span>12 İyul 2026</span>
+
+                <h3>Ghost of Yōtei üçün yeni gameplay yayımlandı</h3>
+
+                <p>
+                    Ghost of Yōtei üçün yeni gameplay görüntüləri təqdim edildi.
+                    Oyunda döyüş sistemi və açıq dünya daha da inkişaf etdirilib.
+                </p>
+
+                <button>Ətraflı Oxu</button>
+
+            </div>
+
+        </div>
+
+        <!-- Xəbər 2 -->
+        <div class="news-card"
+
+data-title="EA SPORTS FC 26 üçün yeni yeniləmə"
+
+data-image="images/news2.jpg"
+
+data-text="Yeni yeniləmə ilə oyun balansı yaxşılaşdırılıb, qapıçı animasiyaları dəyişdirilib və Ultimate Team rejiminə yeni kartlar əlavə olunub.">
+
+            <img src="images/ea-sports-fc26-ps5.webp" alt="EA SPORTS FC 26">
+
+            <div class="news-content">
+
+                <span>10 İyul 2026</span>
+
+                <h3>EA SPORTS FC 26 üçün yeni yeniləmə yayımlandı</h3>
+
+                <p>
+                    Yeni yeniləmə ilə oyun balansı dəyişdirildi və müxtəlif
+                    texniki problemlər aradan qaldırıldı.
+                </p>
+
+                <button>Ətraflı Oxu</button>
+
+            </div>
+
+        </div>
+
+        <!-- Xəbər 3 -->
+        <div class="news-card"
+
+data-title="PlayStation Plus yeni oyunları açıqladı"
+
+data-image="images/news3.jpg"
+
+data-text="Bu ay PlayStation Plus abunəçilərinə bir neçə məşhur oyun pulsuz təqdim olunur. Siyahıya aksiyon, yarış və macəra janrında oyunlar daxildir.">
+
+            <img src="images/ps-plus.webp" alt="PlayStation Plus">
+
+            <div class="news-content">
+
+                <span>8 İyul 2026</span>
+
+                <h3>PlayStation Plus bu ayın pulsuz oyunlarını açıqladı</h3>
+
+                <p>
+                    İyul ayı üçün təqdim olunan PlayStation Plus oyunları
+                    rəsmi olaraq elan edildi.
+                </p>
+
+                <button>Ətraflı Oxu</button>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- News Modal -->
+
+<div class="news-modal" id="newsModal">
+
+    <div class="news-modal-content">
+
+        <span class="close-modal">&times;</span>
+
+        <img id="modalImage" src="" alt="">
+
+        <h2 id="modalTitle"></h2>
+
+        <p id="modalText"></p>
+
+    </div>
+
+</div>
+
+<!-- Footer -->
+ 
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <!-- Logo və məlumat -->
+
+        <div class="footer-box">
+
+            <a href="index.html" class="footer-logo">
+
+                <div class="favorite-btn">
+    <i class="fa-regular fa-heart"></i>
+</div>
+
+<img src="images/logo.jpeg" alt="GameVerse Logo">
+
+                <span>GameVerse</span>
+
+            </a>
+
+            <p>
+                GameVerse – PlayStation oyun diskləri,
+                ikinci əl PlayStation konsolları və
+                oyun aksesuarları üçün etibarlı ünvan.
+            </p>
+
+        </div>
+
+</footer>
+
+<!-- Toast -->
+
+<div class="toast" id="toast">
+    <i class="fa-solid fa-heart"></i>
+    <span>Favorilərə əlavə edildi</span>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
